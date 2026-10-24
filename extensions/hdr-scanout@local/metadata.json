@@ -1,0 +1,8 @@
+{
+  "uuid": "hdr-scanout@local",
+  "name": "HDR Scanout Helper",
+  "description": "按需打开 mutter 的 IGNORE_COLOR_STATE_FOR_DIRECT_SCANOUT，让 HDR 全屏游戏能以 10 位直通显示。通过 D-Bus 开关，平时保持关闭。",
+  "shell-version": [
+    "50"
+  ]
+}

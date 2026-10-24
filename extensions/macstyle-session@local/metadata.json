@@ -1,0 +1,8 @@
+{
+  "uuid": "macstyle-session@local",
+  "name": "MacStyle Session",
+  "description": "Load MacStyle GNOME Shell theme, GNOME 50 panel fixes, and Ubuntu Dock hover magnification.",
+  "shell-version": ["50"],
+  "session-modes": ["user"],
+  "version": 2
+}

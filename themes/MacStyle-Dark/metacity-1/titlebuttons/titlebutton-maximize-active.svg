@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="g-maximize-active-dark" x1="8" y1="1.1" x2="8" y2="14.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(89, 170, 65)"/>
+      <stop offset="45%" stop-color="rgb(71, 160, 44)"/>
+      <stop offset="100%" stop-color="rgb(68, 154, 42)"/>
+    </linearGradient>
+    <linearGradient id="s-maximize-active-dark" x1="8" y1="1.1" x2="8" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="70%" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="8" cy="8" r="6.90" fill="rgb(62, 141, 39)"/>
+  <circle cx="8" cy="8" r="6.40" fill="url(#g-maximize-active-dark)"/>
+  <circle cx="8" cy="8" r="6.40" fill="url(#s-maximize-active-dark)"/>
+  <path fill="rgba(36,23,18,.55)" d="M6.41 4.98 11 9.565V5.98c0-.415-.585-1-1-1z"/><path fill="rgba(36,23,18,.55)" d="M5 6.392V9.98c0 .416.584 1 1 1h3.586z"/>
+</svg>

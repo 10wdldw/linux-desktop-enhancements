@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="g-restore-hover-light" x1="8" y1="1.1" x2="8" y2="14.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(62, 215, 82)"/>
+      <stop offset="45%" stop-color="rgb(40, 211, 63)"/>
+      <stop offset="100%" stop-color="rgb(38, 203, 60)"/>
+    </linearGradient>
+    <linearGradient id="s-restore-hover-light" x1="8" y1="1.1" x2="8" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="70%" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="8" cy="8" r="6.90" fill="rgb(32, 169, 50)"/>
+  <circle cx="8" cy="8" r="6.40" fill="url(#g-restore-hover-light)"/>
+  <circle cx="8" cy="8" r="6.40" fill="url(#s-restore-hover-light)"/>
+  <path fill="rgba(36,23,18,.55)" d="M8.025 3.414V7c0 .416.585 1 1 1h3.586z"/><path fill="rgba(36,23,18,.55)" d="M3.39 8 7.976 12.586V9c0-.416-.585-1-1-1z"/>
+</svg>

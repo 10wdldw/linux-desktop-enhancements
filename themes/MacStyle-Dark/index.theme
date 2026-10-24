@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=MacStyle-Dark
+Comment=A MacOS BigSur like Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=MacStyle-Dark
+MetacityTheme=MacStyle-Dark
+IconTheme=WhiteSur
+CursorTheme=Yaru
+ButtonLayout=:minimize,maximize,close
+

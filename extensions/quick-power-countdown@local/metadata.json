@@ -1,0 +1,13 @@
+{
+  "uuid": "quick-power-countdown@local",
+  "name": "Quick Power Countdown",
+  "description": "把关机 / 重启 / 注销确认对话框的自动执行倒计时缩短为 3 秒，并把默认按钮从「取消」改为对应的关机、重启或注销。",
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "version": 3
+}
