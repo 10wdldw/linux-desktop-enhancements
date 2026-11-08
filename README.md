@@ -1,123 +1,153 @@
-# Linux Desktop Enhancements / Linux 桌面美化与优化
+# Linux Beautify / Linux 桌面美化
 
-Personal GNOME Shell extensions and matching MacStyle themes, collected as a small, reusable package. / 将个人使用的 GNOME Shell 扩展与配套 MacStyle 主题整理为可复用的小型套件。
+一个 GNOME Shell 扩展，整合 Dock、图标放大、浅深主题、窗口圆角、桌面操作和热点开关。
+提供**中文（含输入法）**与**英文（不含输入法）**两种安装包。
 
-## 中文
+当前发布：**[v3.1.2 预发布版](https://github.com/10wdldw/linux-desktop-enhancements/releases/tag/v3.1.2)**。
+目标环境为 **Ubuntu 26.04 amd64 / GNOME Shell 50**；其他发行版、架构与 Shell 大版本尚未验证。
+本次发布同步当前本机插件实现，Dock 角标、旧外观迁移和硬盘挂载后的流畅度问题仍需实机回归。
 
-本项目整理了三项本地 GNOME 扩展及配套浅色/深色桌面主题。目标环境是 Ubuntu、GNOME Shell 50；不包含普通鼠标指针项目，也不替换系统扩展或全局桌面配置。
+## 下载与版本选择
 
-### 包含内容
-
-| 组件 | 用途 | 默认状态 |
+| 安装包 | 桌面功能 | 输入法与语言 |
 | --- | --- | --- |
-| MacStyle Session | Mac 风格 Shell 主题接入、Ubuntu Dock 悬停放大、窗口圆角及本机定制 | 安装但不自动启用 |
-| Quick Power Countdown | 缩短关机/重启/注销确认倒计时至 3 秒；检测到阻止退出的应用时保留保护倒计时 | 安装但不自动启用 |
-| HDR Scanout Helper | 通过会话 D-Bus 按需切换 Mutter 的 HDR 直通调试标志 | 安装但保持禁用 |
-| MacStyle-Light / MacStyle-Dark | 配套 GTK、GNOME Shell 和窗口主题 | 安装但不自动切换当前主题 |
+| [中文版完整包](https://github.com/10wdldw/linux-desktop-enhancements/releases/download/v3.1.2/linux-beautify-zh-3.1.2.tar.gz) | 内部 Dock、放大、主题、圆角、应用操作、热点 | Fcitx5 5.1.19、Rime 1.16.1、原生候选面板、雾凇拼音及双拼；插件界面中文 |
+| [English full bundle](https://github.com/10wdldw/linux-desktop-enhancements/releases/download/v3.1.2/linux-beautify-en-3.1.2.tar.gz) | Same integrated desktop features | No input module, engine or dictionaries; `--apply` sets the user's GNOME session to English |
 
-### 安装
+[全部附件与 Shell ZIP](https://github.com/10wdldw/linux-desktop-enhancements/releases/tag/v3.1.2) ·
+[SHA256 校验文件](https://github.com/10wdldw/linux-desktop-enhancements/releases/download/v3.1.2/SHA256SUMS)
 
-需要 Ubuntu/GNOME Shell 50。先解压本包并进入目录：
+推荐完整 `.tar.gz`：包含安装器、事务备份和恢复工具。Shell ZIP 只有扩展载荷，
+不会替你创建 GTK 主题链接、完整输入环境或安装事务。
+两版共用 UUID `linux-beautify@local`，同一时间运行一版。
 
-```bash
-bash scripts/install.sh
-```
+## 安装与升级
 
-如果目标扩展或主题已经存在，安装器会停止，避免覆盖。确认要替换时使用：
-
-```bash
-bash scripts/install.sh --backup-existing
-```
-
-被替换的目录会移到 `~/.local/state/linux-desktop-enhancements/backups/`。安装器不使用 sudo，不更改系统目录，不自动启用扩展或切换桌面设置。
-
-安装后如需启用 MacStyle 和电源倒计时扩展，可在 GNOME 扩展应用中手动开启。若要切换主题，先确认系统已安装 GNOME 的 User Themes 扩展，然后在 Tweaks/优化工具中选择 `MacStyle-Light` 或 `MacStyle-Dark`。此主题元数据引用 WhiteSur 图标主题和 Yaru 光标主题；本包不包含这两个独立资源。
-
-HDR 助手默认保持禁用。仅在了解颜色副作用后手动启用：开启后 SDR 全屏应用也可能被直接扫描输出，颜色可能异常。它不会自动打开 HDR 标志；需要时可在 Shell 会话中调用：
+下载中文完整包和 `SHA256SUMS`，在下载目录执行：
 
 ```bash
-gnome-extensions enable hdr-scanout@local
-gdbus call --session --dest org.gnome.Shell --object-path /local/HdrScanout \
-  --method local.HdrScanout.SetIgnoreColorState true
+sha256sum --check --ignore-missing SHA256SUMS
+tar -xzf linux-beautify-zh-3.1.2.tar.gz
+cd linux-beautify-zh-3.1.2
+python3 scripts/beautify.py doctor
+bash install.sh --backup-existing --dry-run
+bash install.sh --backup-existing --apply --theme system --defer-activation
 ```
 
-关闭时将 `true` 改为 `false`。禁用该扩展也会自动清除此标志。
+安装完成后正常注销并重新登录。已有 Fcitx/Rime 环境的用户，在安装命令中加
+`--preserve-input`，保留已有配置、个人词库、启动项与输入环境。首次安装使用上面的完整预设。
+`--defer-activation` 等待新的 GNOME 会话，避免当前 Shell 重用已缓存的旧代码。
+升级正在运行的整合版时，安装器会先停用它，Dock 等功能在重新登录后恢复。
 
-### 验证与限制
+安装默认只放置资源；`--apply` 才应用 GTK/Dock/输入预设并安排激活。
+重叠的旧 Dock、User Themes、MacStyle 等扩展按 UUID 逐项停用，原状态记录用于恢复。
+英文版保留现有的外部输入面板；中文版接管候选面板。安装不需要 sudo。
 
-- 本包按本机 GNOME Shell 50 环境整理；不承诺兼容其他 Shell 主版本或非 Ubuntu Dock 环境。
-- Quick Power Countdown 的 3 秒倒计时会自动执行默认操作。启用前请确认自己接受这个行为；如果有应用阻止退出，原有较长倒计时和取消流程会保留。
-- Ubuntu Dock、User Themes、WhiteSur 图标主题、Yaru 光标主题由系统或用户另行提供。
-- 本项目按 GPL-3.0 发布；第三方主题及代码仍受各自随附许可和声明约束，详见 [LICENSE](LICENSE) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
-- 本机还存在针对 Ubuntu Dock、Snap 权限提示和输入法的版本相关本地调整；它们不是独立的用户扩展，本便携包不会修改 `/usr/share`、Fcitx 配置或应用启动项。相关机器级维护记录留在原工作区，不作为跨机器安装内容。
-- 上游组件和主题的来源、授权边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+**电源行为：当前预设默认启用三秒倒计时，并把确认框默认按钮设为关机、重启或注销。**
+应用报告 inhibitor 时保留原倒计时与默认按钮逻辑。可在扩展首选项关闭此功能，
+停用后重新启用扩展或重登生效。HDR 助手默认关闭。
 
-### 目录
+## 备份与恢复
 
-- `extensions/`：三个 GNOME Shell 扩展的完整用户级安装目录。
-- `themes/`：MacStyle 浅色与深色主题。
-- `scripts/install.sh`：用户级安装器。
-- `AGENTS.md`：供 Codex/其他代码 agent 使用的维护说明。
-- `docs/AGENT_USAGE.md`：面向任务执行 agent 的中英文工作流程。
-- `THIRD_PARTY_NOTICES.md`：组件来源和授权核对记录。
-- `scripts/`：可选的检查和安装脚本。
+替换已有文件必须传 `--backup-existing`。原件、设置旧值和恢复清单保存在：
+
+```text
+~/.local/state/linux-desktop-enhancements/installations/
+```
+
+完整包目录中可预览或执行恢复：
+
+```bash
+bash uninstall.sh --dry-run
+bash uninstall.sh
+# 安装后的文件被修改时，先保留修改副本再恢复：
+bash uninstall.sh --force
+```
+
+待激活安装会生成一次性登录任务，检查扩展和 Dock/输入模块，失败时恢复。
+任务脚本和 `activation.log` 位于 `~/.local/state/linux-desktop-enhancements/first-login/`。
+资源跟随真实 XDG 目录安装；RC20 等磁盘上的个人备份不包含在发行包中。
+
+## 本次变更与已知限制
+
+- 将原来分散的扩展改为一个入口和一个 DockManager；共享外观与焦点监听，合并同一事件内的图标查询，复用 Shell 的网络客户端。
+- 隔离 GObject 类型名，修复旧插件已经加载时的类型冲突；增加登录激活检查、失败恢复和输入配置保留。
+- 同步当前本机修补：热点在设备/连接配置变化后更新，异步出现的快捷设置项持续遵循隐藏规则，输入面板在暂时没有显示器时安全隐藏。
+- 未完整迁移旧 Dock 的所有个性化设置与机器专属硬盘图标。红色运行圆点、通知胶囊计数/定位、硬盘挂载和卸载后的持续掉帧反馈仍列为待验证问题，本版不宣称已解决。
+- WhiteSur 图标和 Yaru 光标需自行安装；GTK 4/libadwaita、Qt 与 Flatpak 的主题及输入法行为受应用自身集成影响。
+- 没有整机 FPS、CPU 或内存收益的基准结论；隔离测试不等同于高刷、多屏、真实磁盘热插拔和所有应用的实机兼容验证。
+
+## 自定义硬盘图标
+
+硬盘标识仅从本机 `~/.config/linux-beautify/drive-icons.json` 读取，不随发布包分发。
+按自己的卷 UUID 配置名称、图标文件和排序，重新启用扩展后生效：
+
+```json
+{
+  "YOUR_VOLUME_UUID": {"name": "Data", "file": "drive-p41-v2.svg", "order": 0}
+}
+```
+
+图标文件需位于扩展的 `desktop/assets/` 中；包内附有 `drive-p41-v2.svg`、
+`drive-rc20-v2.svg`、`drive-860evo-v2.svg`。没有配置的硬盘保留系统名称与图标。
+
+## 文档与开发
+
+- [中文版完整说明](docs/README.zh.md)
+- [English installation and recovery](docs/README.en.md)
+- [架构与资源生命周期](docs/ARCHITECTURE.md)
+- [审计记录](docs/AUDIT.md) · [验证范围与复现命令](docs/VALIDATION.md)
+- [第三方来源及许可](THIRD_PARTY_NOTICES.md)
+
+离线构建两版（需 Python 3、`glib-compile-schemas`、`sassc`、`msgfmt`）：
+
+```bash
+python3 scripts/build.py
+python3 -m unittest discover -s tests -p 'test_*.py'
+node tests/resources.mjs
+node tests/localization.mjs
+gjs -m tests/drive-config.js
+python3 tests/validate_runtime.py en zh
+python3 tests/validate_embedded_input.py
+```
+
+产物位于 `dist/`。运行测试另需 GNOME 50、GJS、GTK 3/4、libadwaita、PyGObject 与 D-Bus，
+使用临时 HOME、私有总线和 headless Wayland，不向活动桌面安装测试版本。
+项目采用 GPL-3.0；保留上游版权、独立组件许可，以及输入引擎对应源码归档。
 
 ## English
 
-This package collects three local GNOME Shell extensions and their light/dark MacStyle themes. It targets Ubuntu with GNOME Shell 50. It does not include the unrelated cursor-theme project, replace system extensions, or modify global desktop settings.
+Linux Beautify combines its own Dock, magnification, light/dark themes, rounded
+windows, desktop actions and a hotspot toggle into one GNOME Shell extension.
+**v3.1.2 is a prerelease for Ubuntu 26.04 amd64 / GNOME Shell 50.**
+The Chinese edition embeds Fcitx5/Rime, Rime Ice and a native candidate panel;
+the English edition excludes the entire input stack. Both use `linux-beautify@local`.
 
-### Included components
-
-| Component | Purpose | Default behavior |
-| --- | --- | --- |
-| MacStyle Session | Mac-style Shell theme integration, Ubuntu Dock hover magnification, rounded windows, and local customizations | Installed, not enabled automatically |
-| Quick Power Countdown | Sets logout/shutdown/restart confirmation to 3 seconds; retains the longer protection flow when apps inhibit the action | Installed, not enabled automatically |
-| HDR Scanout Helper | Toggles Mutter's HDR direct-scanout debug flag on demand over session D-Bus | Installed and left disabled |
-| MacStyle-Light / MacStyle-Dark | Matching GTK, GNOME Shell, and window themes | Installed without changing the active theme |
-
-### Install
-
-Ubuntu with GNOME Shell 50 is required. Extract the package, enter its directory, and run:
+Download the [English full bundle](https://github.com/10wdldw/linux-desktop-enhancements/releases/download/v3.1.2/linux-beautify-en-3.1.2.tar.gz)
+and [checksums](https://github.com/10wdldw/linux-desktop-enhancements/releases/download/v3.1.2/SHA256SUMS), then:
 
 ```bash
-bash scripts/install.sh
+sha256sum --check --ignore-missing SHA256SUMS
+tar -xzf linux-beautify-en-3.1.2.tar.gz
+cd linux-beautify-en-3.1.2
+python3 scripts/beautify.py doctor
+bash install.sh --backup-existing --dry-run
+bash install.sh --backup-existing --apply --theme system --defer-activation
 ```
 
-The installer stops if a target extension or theme already exists. To replace existing targets after reviewing them, run:
+`--apply` also sets the current user's GNOME session language to `en_US.UTF-8`;
+that locale must already exist. The previous language is recorded for recovery.
+Log out and back in to load the installed code. An upgrade disables the currently
+running integrated extension until the new session activates it.
 
-```bash
-bash scripts/install.sh --backup-existing
-```
+The current preset enables a **three-second logout/restart/shutdown countdown**
+and focuses the action button unless an application inhibits the action. Disable
+it in preferences and reload the extension if desired. HDR remains off by default.
+Restore with `bash uninstall.sh`; originals live in
+`~/.local/state/linux-desktop-enhancements/installations/`.
 
-Replaced directories are moved to `~/.local/state/linux-desktop-enhancements/backups/`. The installer does not use sudo, write to system directories, enable extensions, or change desktop settings.
-
-After installation, enable MacStyle Session and Quick Power Countdown manually in GNOME Extensions if desired. To switch themes, ensure GNOME User Themes is installed and select `MacStyle-Light` or `MacStyle-Dark` in Tweaks. The theme metadata references the separate WhiteSur icon theme and Yaru cursor theme; neither is bundled.
-
-HDR Scanout Helper is disabled by default. Enable it only if you understand the color side effect: SDR fullscreen applications may also be direct-scanned out and display incorrect colors. The extension never enables the flag automatically. To opt in from the Shell session:
-
-```bash
-gnome-extensions enable hdr-scanout@local
-gdbus call --session --dest org.gnome.Shell --object-path /local/HdrScanout \
-  --method local.HdrScanout.SetIgnoreColorState true
-```
-
-Pass `false` to turn the flag off. Disabling the extension also clears it.
-
-### Package contents
-
-- `extensions/`: complete user-level directories for the three GNOME Shell extensions.
-- `themes/`: the MacStyle light and dark themes.
-- `scripts/install.sh`: user-level installer.
-- `AGENTS.md`: maintenance rules for Codex and other code agents.
-- `docs/AGENT_USAGE.md`: bilingual task workflow for agents.
-- `THIRD_PARTY_NOTICES.md`: component origin and licensing review notes.
-
-### Validation and limits
-
-- This package was assembled for the local GNOME Shell 50 environment. Other Shell major versions and non-Ubuntu-Dock environments are not claimed as supported.
-- Quick Power Countdown automatically performs the selected action after three seconds. Review this behavior before enabling it. The existing longer countdown and cancel flow remain when an application inhibits logout/shutdown/restart.
-- Ubuntu Dock, GNOME User Themes, WhiteSur icons, and Yaru cursors are supplied separately by the system or user.
-- This project is distributed under GPL-3.0; third-party themes and code remain subject to their own bundled licenses and notices. See [LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
-- This machine also has version-specific local changes to Ubuntu Dock, Snap permission prompts, and input-method configuration. They are not standalone user extensions; this portable package does not modify `/usr/share`, Fcitx settings, or application launchers. Machine-specific maintenance records remain in the original workspace and are not treated as cross-machine install content.
-- Review [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for upstream origins and license boundaries.
-
+This release includes the current desktop fixes for hotspot availability, delayed
+quick-settings tiles and temporary monitor loss. Earlier reports concerning Dock
+notification capsules, running-dot appearance, incomplete legacy appearance
+migration and stuttering after drive mount/unmount still need hardware regression
+testing. No measured system-wide performance improvement is claimed.

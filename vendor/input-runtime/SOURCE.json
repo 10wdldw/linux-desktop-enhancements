@@ -1,0 +1,687 @@
+{
+  "target": "Ubuntu 26.04 amd64",
+  "archive": "https://archive.ubuntu.com/ubuntu/",
+  "binary_packages": [
+    {
+      "Package": "fcitx5",
+      "Version": "5.1.19-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5/fcitx5_5.1.19-1_amd64.deb",
+      "SHA256": "c33a300fa71d0502f6fc18037446c710b1b6771fa389f5247085a10a1d8bc094"
+    },
+    {
+      "Package": "fcitx5-data",
+      "Version": "5.1.19-1",
+      "Architecture": "all",
+      "Filename": "pool/universe/f/fcitx5/fcitx5-data_5.1.19-1_all.deb",
+      "SHA256": "a25913a02f7fc55b205d56cd05069a18d243356f16b013a30bb0fb49f6477786"
+    },
+    {
+      "Package": "fcitx5-modules",
+      "Version": "5.1.19-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5/fcitx5-modules_5.1.19-1_amd64.deb",
+      "SHA256": "f95a71fe517fe58df7be89575f051eb990c76b8fd92fc0526ecc8bccce74670a"
+    },
+    {
+      "Package": "libfcitx5core7",
+      "Version": "5.1.19-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5/libfcitx5core7_5.1.19-1_amd64.deb",
+      "SHA256": "69694cd46740cafd087456ff6d53092a91feefaf66e84731d8dc95eddef36191"
+    },
+    {
+      "Package": "libfcitx5config6",
+      "Version": "5.1.19-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5/libfcitx5config6_5.1.19-1_amd64.deb",
+      "SHA256": "c965ad45ca294fa04573a5a490172caf6bfd8ebf96eab65dee64524a6764efd9"
+    },
+    {
+      "Package": "libfcitx5utils2",
+      "Version": "5.1.19-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5/libfcitx5utils2_5.1.19-1_amd64.deb",
+      "SHA256": "bb00945e5e135d509cfce848904cda97603bfd7493e005557c797c57d4aec053"
+    },
+    {
+      "Package": "fcitx5-rime",
+      "Version": "5.1.13-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-rime/fcitx5-rime_5.1.13-1_amd64.deb",
+      "SHA256": "08533177252cb7d39dc2acb54acd15439f3bfd07a626135295bf5021d182ac0c"
+    },
+    {
+      "Package": "librime1t64",
+      "Version": "1.16.1+dfsg1-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/libr/librime/librime1t64_1.16.1+dfsg1-1build1_amd64.deb",
+      "SHA256": "73b24fd998575e3d81bad6cc9086da1619a78fedb763564212fa97f304d8c1dc"
+    },
+    {
+      "Package": "librime-bin",
+      "Version": "1.16.1+dfsg1-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/libr/librime/librime-bin_1.16.1+dfsg1-1build1_amd64.deb",
+      "SHA256": "523d28a52636139a62f348e63e1ed02019cd3fb9a73db289007b2b7a2e8ab5cb"
+    },
+    {
+      "Package": "librime-plugin-lua",
+      "Version": "1.16.1+dfsg1~git20250707-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/libr/librime/librime-plugin-lua_1.16.1+dfsg1~git20250707-1build1_amd64.deb",
+      "SHA256": "d3e50229b04a6a5732001f8997a8573827c69e57c24b08fb0d37e3e6a9ee93f3"
+    },
+    {
+      "Package": "librime-plugin-charcode",
+      "Version": "1.16.1+dfsg1~git20240319-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/libr/librime/librime-plugin-charcode_1.16.1+dfsg1~git20240319-1build1_amd64.deb",
+      "SHA256": "af42c385de2672759ea4720ba8d9f4f2579cf42b726b80eb9d2c3df28d154639"
+    },
+    {
+      "Package": "libgoogle-glog0v6t64",
+      "Version": "0.6.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/g/google-glog/libgoogle-glog0v6t64_0.6.0-3_amd64.deb",
+      "SHA256": "132735b73e25909ae7f4a54cfd924233e0fd9f4c44859e5db5f7d1f96b7009dc"
+    },
+    {
+      "Package": "libgflags2.2",
+      "Version": "2.2.2-3",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/g/gflags/libgflags2.2_2.2.2-3_amd64.deb",
+      "SHA256": "f131366bab44e65868c5d809813c43f64101d9c7990159a51a1525fccb7485ba"
+    },
+    {
+      "Package": "libleveldb1d",
+      "Version": "1.23-6",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/l/leveldb/libleveldb1d_1.23-6_amd64.deb",
+      "SHA256": "2a1a2c15cd3c62ed47fa7e27bcbdc2a7ffa9e769c5b5e52308cde09e52d3c65b"
+    },
+    {
+      "Package": "libmarisa1",
+      "Version": "0.3.1+git20250817-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/marisa/libmarisa1_0.3.1+git20250817-1build1_amd64.deb",
+      "SHA256": "befd1c30ac2163bb15ea83f26f92dbf4de39a00dcb0eaad133ee2c73306b268b"
+    },
+    {
+      "Package": "libopencc1.1",
+      "Version": "1.1.9+ds1-4build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/o/opencc/libopencc1.1_1.1.9+ds1-4build1_amd64.deb",
+      "SHA256": "8bfa00df2d2d8f4d0e96c8f4b034f9b13b6394ae32944154cd276ad1726c86ff"
+    },
+    {
+      "Package": "libyaml-cpp0.8",
+      "Version": "0.8.0+dfsg-9",
+      "Architecture": "amd64",
+      "Filename": "pool/main/y/yaml-cpp/libyaml-cpp0.8_0.8.0+dfsg-9_amd64.deb",
+      "SHA256": "506549e70bbdf7a3f74747d95231c2bdd0d35b6ca44732dbcb1817e7a266b308"
+    },
+    {
+      "Package": "liblua5.4-0",
+      "Version": "5.4.8-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lua5.4/liblua5.4-0_5.4.8-1build1_amd64.deb",
+      "SHA256": "ff589ea3f181b89dd76b0240f79c59ac2f13f24e2053f624f774f596c7ef7897"
+    },
+    {
+      "Package": "libxcb-imdkit1",
+      "Version": "1.0.9-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/x/xcb-imdkit/libxcb-imdkit1_1.0.9-1build1_amd64.deb",
+      "SHA256": "9bc0ad6f89f82f1a6d60c17e8af60184dbd09ea40bd8ccfc3a00bfb405a4e1d9"
+    },
+    {
+      "Package": "libxcb-ewmh2",
+      "Version": "0.4.2-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/x/xcb-util-wm/libxcb-ewmh2_0.4.2-1build1_amd64.deb",
+      "SHA256": "03494b139ce9039b03d6518665ba36dc8f24379fa19978cd7cc331d582d95cfc"
+    },
+    {
+      "Package": "libxcb-icccm4",
+      "Version": "0.4.2-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/x/xcb-util-wm/libxcb-icccm4_0.4.2-1build1_amd64.deb",
+      "SHA256": "4a3ad09974233ecf1fe0fc220fb53261e8de617a2b1ee03b35d93279ea7ca6ef"
+    },
+    {
+      "Package": "libxcb-keysyms1",
+      "Version": "0.4.1-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/x/xcb-util-keysyms/libxcb-keysyms1_0.4.1-1build1_amd64.deb",
+      "SHA256": "de24aefed6890d3ffa936aa8cbe64a7c118452c4287d2a465d4813c620490fd4"
+    },
+    {
+      "Package": "libxcb-util1",
+      "Version": "0.4.1-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xcb-util/libxcb-util1_0.4.1-1build1_amd64.deb",
+      "SHA256": "cf20c1093b223f82dc970cf38c3907ba0f4b70607820ff1c13d64ef51c0d1656"
+    },
+    {
+      "Package": "libxcb-xinerama0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-xinerama0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "6f589281c628cd6f4649ac0e8fc25db0c94653033869e1a8931611bd42b8a869"
+    },
+    {
+      "Package": "libxkbcommon-x11-0",
+      "Version": "1.13.1-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.13.1-1_amd64.deb",
+      "SHA256": "231f44bf451c6263bbd69c23620018aad94297581391f9094b924912ca77a8a8"
+    },
+    {
+      "Package": "rime-prelude",
+      "Version": "0.0~git20251229.db691d2-1",
+      "Architecture": "all",
+      "Filename": "pool/universe/r/rime-prelude/rime-prelude_0.0~git20251229.db691d2-1_all.deb",
+      "SHA256": "c33498534bd8d775fa4f0d4bc26afb959df731aa3282bdb78e702505f45ae459"
+    },
+    {
+      "Package": "fcitx5-frontend-gtk3",
+      "Version": "5.1.6-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-gtk/fcitx5-frontend-gtk3_5.1.6-1_amd64.deb",
+      "SHA256": "8e33764c1273941efb02dd0322429150a1b14131eff98a82dfc0b975b0929262"
+    },
+    {
+      "Package": "fcitx5-frontend-gtk4",
+      "Version": "5.1.6-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-gtk/fcitx5-frontend-gtk4_5.1.6-1_amd64.deb",
+      "SHA256": "6dbca80865c23447c944339ce3bb0100c15078ad956aecde54bd1641d8512bcc"
+    },
+    {
+      "Package": "libfcitx5gclient2",
+      "Version": "5.1.6-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-gtk/libfcitx5gclient2_5.1.6-1_amd64.deb",
+      "SHA256": "c1652bbb3f50547c22d1cb5a7aa200b91965286849823d43abc454c4d64b5bd7"
+    },
+    {
+      "Package": "fcitx5-frontend-qt5",
+      "Version": "5.1.13-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-qt/fcitx5-frontend-qt5_5.1.13-1_amd64.deb",
+      "SHA256": "75b316f771a939a01f362c4b901d3f99c25db963b1237238c8105ef0fdc3f0b3"
+    },
+    {
+      "Package": "fcitx5-frontend-qt6",
+      "Version": "5.1.13-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-qt/fcitx5-frontend-qt6_5.1.13-1_amd64.deb",
+      "SHA256": "ec3643154841e99c10abd88da91a7ca7f417aef3b77b433cd3710a58a18eb112"
+    },
+    {
+      "Package": "libfcitx5-qt1",
+      "Version": "5.1.13-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-qt/libfcitx5-qt1_5.1.13-1_amd64.deb",
+      "SHA256": "f89fe5b7cc8cd60f933dd6e3286b825c0a5456cef76a19b8b76b8da2dcbae72f"
+    },
+    {
+      "Package": "libfcitx5-qt6-1",
+      "Version": "5.1.13-1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/f/fcitx5-qt/libfcitx5-qt6-1_5.1.13-1_amd64.deb",
+      "SHA256": "75308fae2ea5b7878d5aac1cdeb2a14a18d76ddda4acd972b5eca0c3ba34c76a"
+    },
+    {
+      "Package": "libfcitx5-qt-data",
+      "Version": "5.1.13-1",
+      "Architecture": "all",
+      "Filename": "pool/universe/f/fcitx5-qt/libfcitx5-qt-data_5.1.13-1_all.deb",
+      "SHA256": "774467fbaec46cbdd1f5a8d2a24f35dabfd9e2419262c576afe9576e79451266"
+    }
+  ],
+  "source_packages": [
+    {
+      "name": "fcitx5",
+      "version": "5.1.19-1",
+      "files": [
+        {
+          "file": "fcitx5_5.1.19-1.dsc",
+          "sha256": "8781598d708f2a0d8c24dbeb8691a7b1a2da8652ea7996e9d5d69dbc786f4c1f",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5/fcitx5_5.1.19-1.dsc"
+        },
+        {
+          "file": "fcitx5_5.1.19.orig.tar.xz",
+          "sha256": "8957c0a5bbd3caad42215496c21666abefe3be7399a38928639f3bb484ed6a1b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5/fcitx5_5.1.19.orig.tar.xz"
+        },
+        {
+          "file": "fcitx5_5.1.19-1.debian.tar.xz",
+          "sha256": "ddc83bcc4a08ca5e3a26522b9f78cd250ade5167fdeb27371693e953738b0ddf",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5/fcitx5_5.1.19-1.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "fcitx5-rime",
+      "version": "5.1.13-1",
+      "files": [
+        {
+          "file": "fcitx5-rime_5.1.13-1.dsc",
+          "sha256": "45dcc0eb030e7072c61883bbe37f71ef648d62d83e08e363c11183a1106fd4f3",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-rime/fcitx5-rime_5.1.13-1.dsc"
+        },
+        {
+          "file": "fcitx5-rime_5.1.13.orig.tar.xz",
+          "sha256": "8bc11506e889a802b435dc049465172120577e18f4a0297f5557e34cd43d17c2",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-rime/fcitx5-rime_5.1.13.orig.tar.xz"
+        },
+        {
+          "file": "fcitx5-rime_5.1.13-1.debian.tar.xz",
+          "sha256": "163771d6db4ad7f79ea1da13bb3c05707a9bc88456575aa90c3ec6146c384bea",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-rime/fcitx5-rime_5.1.13-1.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "librime",
+      "version": "1.16.1+dfsg1-1build1",
+      "files": [
+        {
+          "file": "librime_1.16.1+dfsg1.orig-librime-charcode.tar.xz",
+          "sha256": "83a2d3384222e35bbfe93087ef3e3fa139af82ac2e2c13b9e5f5bbb00ed9bdaf",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1.orig-librime-charcode.tar.xz"
+        },
+        {
+          "file": "librime_1.16.1+dfsg1.orig-librime-lua.tar.xz",
+          "sha256": "812b539f5f08d4aa2b3e3ae50d5fba419a7b475812cfac9a07742612a42dbefc",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1.orig-librime-lua.tar.xz"
+        },
+        {
+          "file": "librime_1.16.1+dfsg1.orig-librime-octagram.tar.xz",
+          "sha256": "9284b06e74a50f54aadb9c2b831f6e255ff2f3e84c2247b3dad9114edb06d849",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1.orig-librime-octagram.tar.xz"
+        },
+        {
+          "file": "librime_1.16.1+dfsg1.orig.tar.xz",
+          "sha256": "a1d2a4921ad183585c489bd6c6d18674b4b8fdea06543f22c015ae6e6cfa5f3e",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1.orig.tar.xz"
+        },
+        {
+          "file": "librime_1.16.1+dfsg1-1build1.debian.tar.xz",
+          "sha256": "891155b7371dff57bb25013203b18e19cfa6e66e379692c474f878518b41d2fb",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1-1build1.debian.tar.xz"
+        },
+        {
+          "file": "librime_1.16.1+dfsg1-1build1.dsc",
+          "sha256": "ad63e00de2e3893c4ac7d8c5eb305ca9958f76cbc7b3cab3b40c64134131a2b1",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/libr/librime/librime_1.16.1+dfsg1-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "google-glog",
+      "version": "0.6.0-3",
+      "files": [
+        {
+          "file": "google-glog_0.6.0-3.dsc",
+          "sha256": "d5e2d01fbd7f0f8d204ba00fe97e14dfeee05aea9243c42976ad9eb8eeb93c88",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/google-glog/google-glog_0.6.0-3.dsc"
+        },
+        {
+          "file": "google-glog_0.6.0.orig.tar.gz",
+          "sha256": "8a83bf982f37bb70825df71a9709fa90ea9f4447fb3c099e1d720a439d88bad6",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/google-glog/google-glog_0.6.0.orig.tar.gz"
+        },
+        {
+          "file": "google-glog_0.6.0-3.debian.tar.xz",
+          "sha256": "cd5d0c25023dc3c2c3a46e529bd81aa9e1d5e50e00299fdefcce99f4465526a0",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/google-glog/google-glog_0.6.0-3.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "gflags",
+      "version": "2.2.2-3",
+      "files": [
+        {
+          "file": "gflags_2.2.2-3.dsc",
+          "sha256": "72d889a9b4b63d36dbc845a56c71921d9db06595f7f7deb28ac8e3ae49d8b20f",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gflags/gflags_2.2.2-3.dsc"
+        },
+        {
+          "file": "gflags_2.2.2.orig-doc.tar.xz",
+          "sha256": "b9ec8619e0571ecc0dfd22b69783323e6f69a8be46235bfc92929f7123e4e091",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gflags/gflags_2.2.2.orig-doc.tar.xz"
+        },
+        {
+          "file": "gflags_2.2.2.orig.tar.gz",
+          "sha256": "34af2f15cf7367513b352bdcd2493ab14ce43692d2dcd9dfc499492966c64dcf",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gflags/gflags_2.2.2.orig.tar.gz"
+        },
+        {
+          "file": "gflags_2.2.2-3.debian.tar.xz",
+          "sha256": "184e9f56f20c478ada260da716f3555d678817400abc88872f06db42e237bf97",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/g/gflags/gflags_2.2.2-3.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "leveldb",
+      "version": "1.23-6",
+      "files": [
+        {
+          "file": "leveldb_1.23-6.dsc",
+          "sha256": "b738b55a9e1a953b2506f74e5f80da41fa88dc7625394f4eac0bbfc7e40cd7a2",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/leveldb/leveldb_1.23-6.dsc"
+        },
+        {
+          "file": "leveldb_1.23.orig.tar.gz",
+          "sha256": "9a37f8a6174f09bd622bc723b55881dc541cd50747cbd08831c2a82d620f6d76",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/leveldb/leveldb_1.23.orig.tar.gz"
+        },
+        {
+          "file": "leveldb_1.23-6.debian.tar.xz",
+          "sha256": "2e1e414671d3db56ccf260c43920476eb071563419abb1b9e82d18121253e187",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/l/leveldb/leveldb_1.23-6.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "marisa",
+      "version": "0.3.1+git20250817-1build1",
+      "files": [
+        {
+          "file": "marisa_0.3.1+git20250817.orig.tar.gz",
+          "sha256": "e9225e51992d2836372311ded03d58084d9192ba8699ae10838eab8b7b8e622f",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/marisa/marisa_0.3.1+git20250817.orig.tar.gz"
+        },
+        {
+          "file": "marisa_0.3.1+git20250817-1build1.debian.tar.xz",
+          "sha256": "4b074ba4cf17115dc807bf9f53ebcd68d5ed01603a89553a36e604d8464a3d43",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/marisa/marisa_0.3.1+git20250817-1build1.debian.tar.xz"
+        },
+        {
+          "file": "marisa_0.3.1+git20250817-1build1.dsc",
+          "sha256": "ff94eb970f9ef17e5dc973c7b5bd8e80215c899817a02639e51db6d5b35395cd",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/marisa/marisa_0.3.1+git20250817-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "opencc",
+      "version": "1.1.9+ds1-4build1",
+      "files": [
+        {
+          "file": "opencc_1.1.9+ds1.orig.tar.xz",
+          "sha256": "2870b0af383fb47a899552713d73424ce5d5d9d7cb90e903d817eceac493c6f1",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/o/opencc/opencc_1.1.9+ds1.orig.tar.xz"
+        },
+        {
+          "file": "opencc_1.1.9+ds1-4build1.debian.tar.xz",
+          "sha256": "0e72cd8bfeec72da0505acc91b5966a2aa9c371f6362c0d3ab943b999137ab92",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/o/opencc/opencc_1.1.9+ds1-4build1.debian.tar.xz"
+        },
+        {
+          "file": "opencc_1.1.9+ds1-4build1.dsc",
+          "sha256": "0de3db54fff28dfc61b04524f9dd8c49ac20df701d36cf2ec28f543873e85d9b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/o/opencc/opencc_1.1.9+ds1-4build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "yaml-cpp",
+      "version": "0.8.0+dfsg-9",
+      "files": [
+        {
+          "file": "yaml-cpp_0.8.0+dfsg-9.dsc",
+          "sha256": "5c6317cd044f0ad57be89506f5615eee84b23d1cb256a7c1c7eb3f5a4e44d72b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/y/yaml-cpp/yaml-cpp_0.8.0+dfsg-9.dsc"
+        },
+        {
+          "file": "yaml-cpp_0.8.0+dfsg.orig.tar.xz",
+          "sha256": "32c85a5f36633a9005b20261b35fccb0d8ec69e9ef16c67de7d5d007944e3709",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/y/yaml-cpp/yaml-cpp_0.8.0+dfsg.orig.tar.xz"
+        },
+        {
+          "file": "yaml-cpp_0.8.0+dfsg-9.debian.tar.xz",
+          "sha256": "75f6510b1c10761ef4996cd8171e6c6ad5fe3d05228a225cff3cfa51abfb5604",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/y/yaml-cpp/yaml-cpp_0.8.0+dfsg-9.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "lua5.4",
+      "version": "5.4.8-1build1",
+      "files": [
+        {
+          "file": "lua5.4_5.4.8.orig.tar.gz",
+          "sha256": "4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/lua5.4/lua5.4_5.4.8.orig.tar.gz"
+        },
+        {
+          "file": "lua5.4_5.4.8-1build1.debian.tar.xz",
+          "sha256": "fbc3a58b9689fd05ce0831e8ab20b785ce75872f4d667b2b03048a51303851e5",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/lua5.4/lua5.4_5.4.8-1build1.debian.tar.xz"
+        },
+        {
+          "file": "lua5.4_5.4.8-1build1.dsc",
+          "sha256": "e6d82e658a6c0fdfde1fbfbdfcd4afc9deb082d81d5e669fc3952b0c277c2047",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/l/lua5.4/lua5.4_5.4.8-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "xcb-imdkit",
+      "version": "1.0.9-1build1",
+      "files": [
+        {
+          "file": "xcb-imdkit_1.0.9.orig.tar.xz",
+          "sha256": "beba09147c89017440ed87e47d70861d511fb2146fe17489c202224ad556c3f1",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-imdkit/xcb-imdkit_1.0.9.orig.tar.xz"
+        },
+        {
+          "file": "xcb-imdkit_1.0.9-1build1.debian.tar.xz",
+          "sha256": "39b189f218802bf1bb41853e61d7819b3a4523e88ae9e5d40ce0c747bf4c484f",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-imdkit/xcb-imdkit_1.0.9-1build1.debian.tar.xz"
+        },
+        {
+          "file": "xcb-imdkit_1.0.9-1build1.dsc",
+          "sha256": "fc8ffeb47bef535ff1a130724bf2578f0d54dd31dd50f503d3209c7ddc09b88b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-imdkit/xcb-imdkit_1.0.9-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "xcb-util-wm",
+      "version": "0.4.2-1build1",
+      "files": [
+        {
+          "file": "xcb-util-wm_0.4.2.orig.tar.xz",
+          "sha256": "62c34e21d06264687faea7edbf63632c9f04d55e72114aa4a57bb95e4f888a0b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-wm/xcb-util-wm_0.4.2.orig.tar.xz"
+        },
+        {
+          "file": "xcb-util-wm_0.4.2-1build1.debian.tar.xz",
+          "sha256": "bb094d6815fd208e8d2d65cbe123d38f8c90a1038b5c96006d0c41360ae56e3b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-wm/xcb-util-wm_0.4.2-1build1.debian.tar.xz"
+        },
+        {
+          "file": "xcb-util-wm_0.4.2-1build1.dsc",
+          "sha256": "8a7eb51805614974a431a9974351775e37672c3e97c6f4f5f63bb14d2ca168ad",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-wm/xcb-util-wm_0.4.2-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "xcb-util-keysyms",
+      "version": "0.4.1-1build1",
+      "files": [
+        {
+          "file": "xcb-util-keysyms_0.4.1.orig.tar.xz",
+          "sha256": "7c260a5294412aed429df1da2f8afd3bd07b7cba3fec772fba15a613a6d5c638",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-keysyms/xcb-util-keysyms_0.4.1.orig.tar.xz"
+        },
+        {
+          "file": "xcb-util-keysyms_0.4.1-1build1.debian.tar.xz",
+          "sha256": "12bd8938c55f976ccfbccb5306445c42835b3f128f350d6e265c0a7a8484d5cb",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-keysyms/xcb-util-keysyms_0.4.1-1build1.debian.tar.xz"
+        },
+        {
+          "file": "xcb-util-keysyms_0.4.1-1build1.dsc",
+          "sha256": "d259963934e72438978e8f56815a4eb9e13f5a0ba696017e7ca66b02e4774629",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/x/xcb-util-keysyms/xcb-util-keysyms_0.4.1-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "xcb-util",
+      "version": "0.4.1-1build1",
+      "files": [
+        {
+          "file": "xcb-util_0.4.1.orig.tar.gz",
+          "sha256": "21c6e720162858f15fe686cef833cf96a3e2a79875f84007d76f6d00417f593a",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util/xcb-util_0.4.1.orig.tar.gz"
+        },
+        {
+          "file": "xcb-util_0.4.1-1build1.debian.tar.xz",
+          "sha256": "16108efb7f64881f1ae80ffa061c083354d678fff04d43e6ba5356906d4acd7b",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util/xcb-util_0.4.1-1build1.debian.tar.xz"
+        },
+        {
+          "file": "xcb-util_0.4.1-1build1.dsc",
+          "sha256": "3fd4a558c8bad2192182ca422c31737137b2def2a0a242d3fd802e88cc02f688",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/x/xcb-util/xcb-util_0.4.1-1build1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "libxcb",
+      "version": "1.17.0-2ubuntu1",
+      "files": [
+        {
+          "file": "libxcb_1.17.0.orig.tar.gz",
+          "sha256": "2c69287424c9e2128cb47ffe92171e10417041ec2963bceafb65cb3fcf8f0b85",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0.orig.tar.gz"
+        },
+        {
+          "file": "libxcb_1.17.0-2ubuntu1.diff.gz",
+          "sha256": "46de9f8ac632740414a9ac96f4262b43bb33292cbdcc972236342ded9e025f15",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0-2ubuntu1.diff.gz"
+        },
+        {
+          "file": "libxcb_1.17.0-2ubuntu1.dsc",
+          "sha256": "fd2bcc9d51fd2f4397f8e3940b615dab53038cab5f0b5c7ca69aeae56068061a",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxcb/libxcb_1.17.0-2ubuntu1.dsc"
+        }
+      ]
+    },
+    {
+      "name": "libxkbcommon",
+      "version": "1.13.1-1",
+      "files": [
+        {
+          "file": "libxkbcommon_1.13.1-1.dsc",
+          "sha256": "c91012642eaa49c35e630be3be1cc56b96d25eeb20a06dbe4bdbf529c19e7913",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.13.1-1.dsc"
+        },
+        {
+          "file": "libxkbcommon_1.13.1.orig.tar.gz",
+          "sha256": "6802621c81b674e468d2346a8f6d9a48ba5c154b72434a1c9e1a3eaa29f36fb5",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.13.1.orig.tar.gz"
+        },
+        {
+          "file": "libxkbcommon_1.13.1-1.debian.tar.xz",
+          "sha256": "7fd4bf7ebfc4c0c8f5bf75b59f9ad8c697618f07ed52feff135113c4ab2d56c9",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/main/libx/libxkbcommon/libxkbcommon_1.13.1-1.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "rime-prelude",
+      "version": "0.0~git20251229.db691d2-1",
+      "files": [
+        {
+          "file": "rime-prelude_0.0~git20251229.db691d2-1.dsc",
+          "sha256": "c51888ec8d6fdcdc41f462a1b27211f9c7f85249f33d1af7356a0fbf37b7817a",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/r/rime-prelude/rime-prelude_0.0~git20251229.db691d2-1.dsc"
+        },
+        {
+          "file": "rime-prelude_0.0~git20251229.db691d2.orig.tar.xz",
+          "sha256": "ea08f7be9ace8459c5141c775c274612b3aefaf9262d25ffe22f7cd00e1750f4",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/r/rime-prelude/rime-prelude_0.0~git20251229.db691d2.orig.tar.xz"
+        },
+        {
+          "file": "rime-prelude_0.0~git20251229.db691d2-1.debian.tar.xz",
+          "sha256": "f4cce51750340f63f0b46a8e57f48ac47bec4bf42fc3fcb475a4a75728571c15",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/r/rime-prelude/rime-prelude_0.0~git20251229.db691d2-1.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "fcitx5-gtk",
+      "version": "5.1.6-1",
+      "files": [
+        {
+          "file": "fcitx5-gtk_5.1.6-1.dsc",
+          "sha256": "658da27ef60efe1576de9f0191ecc27b39cac9e54856df7834d25ed28f59b414",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-gtk/fcitx5-gtk_5.1.6-1.dsc"
+        },
+        {
+          "file": "fcitx5-gtk_5.1.6.orig.tar.xz",
+          "sha256": "1820c8186c249b54e6070c723d13c241a8bb1c68d23acb526e7055b9f07afe13",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-gtk/fcitx5-gtk_5.1.6.orig.tar.xz"
+        },
+        {
+          "file": "fcitx5-gtk_5.1.6-1.debian.tar.xz",
+          "sha256": "0ce95742c350e84b70936a2257e8b5982559badba1a83f31f8f1f830eb2ba359",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-gtk/fcitx5-gtk_5.1.6-1.debian.tar.xz"
+        }
+      ]
+    },
+    {
+      "name": "fcitx5-qt",
+      "version": "5.1.13-1",
+      "files": [
+        {
+          "file": "fcitx5-qt_5.1.13-1.dsc",
+          "sha256": "11fb7a0ebdbaf47f2d0b998eb18cac41a3e3196b754a11a9d289c0078a4bc66c",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-qt/fcitx5-qt_5.1.13-1.dsc"
+        },
+        {
+          "file": "fcitx5-qt_5.1.13.orig.tar.xz",
+          "sha256": "3433bda27b86adfbbf432241fb779ac65b3f76c861e36ea2ce5fda89340d5308",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-qt/fcitx5-qt_5.1.13.orig.tar.xz"
+        },
+        {
+          "file": "fcitx5-qt_5.1.13-1.debian.tar.xz",
+          "sha256": "4fa994ad9353cb52e00a7b7d8220d0051751a5e9d9064a2e02ae33d32b700511",
+          "url": "https://archive.ubuntu.com/ubuntu/pool/universe/f/fcitx5-qt/fcitx5-qt_5.1.13-1.debian.tar.xz"
+        }
+      ]
+    }
+  ],
+  "relocated_modules": [
+    {
+      "file": "usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules/im-fcitx5.so",
+      "runpath": "$ORIGIN/../../..",
+      "sha256": "18f40fe35cc654ef69c8dcd37d9cf810e19a089c8166bb77bc1fc0d2595ef614"
+    },
+    {
+      "file": "usr/lib/x86_64-linux-gnu/gtk-4.0/4.0.0/immodules/libim-fcitx5.so",
+      "runpath": "$ORIGIN/../../..",
+      "sha256": "a4e6b16677a5f8225975164df381da6e74e80539203706a0060b1630ea62f82b"
+    },
+    {
+      "file": "usr/lib/x86_64-linux-gnu/qt5/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so",
+      "runpath": "$ORIGIN/../../..",
+      "sha256": "15508e33fb199239a6ffec2f354cbca9ebe76c0f96902bc1831fc90d280d38d7"
+    },
+    {
+      "file": "usr/lib/x86_64-linux-gnu/qt6/plugins/platforminputcontexts/libfcitx5platforminputcontextplugin.so",
+      "runpath": "$ORIGIN/../../..",
+      "sha256": "2e447524744bb7a31a7b90f96d56cf6e3d31a2522dc4f66d5e4c50accf4c20e7"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "origin": "https://github.com/micheleg/dash-to-dock",
+  "commit": "3218a87ce099a70dd696b9e633c09e7f06b1d425",
+  "branch": "ubuntu-dock",
+  "license": "GPL-2.0-or-later",
+  "integration": "Runtime library only; standalone extension, metadata and preferences entry points excluded"
+}

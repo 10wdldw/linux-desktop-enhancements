@@ -1,0 +1,10 @@
+{
+  "edition": "zh",
+  "name": "Linux 桌面美化 · 中文版",
+  "version": "3.1.2",
+  "language": "zh_CN",
+  "session_locale": "zh_CN.UTF-8",
+  "apply_session_language": false,
+  "with_input_method": true,
+  "description": "一个扩展提供 Dock、主题、窗口圆角和原生中文输入面板。"
+}

@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';
+import {setLanguage, translate, language} from '../src/desktop/i18n.js';
+import {replaceDesktopName} from '../src/desktop/desktopEntries.js';
+
+setLanguage('en');
+assert.equal(translate('Hotspot'), 'Hotspot');
+assert.equal(translate('Add to Desktop'), 'Add to Desktop');
+const desktop = '[Desktop Entry]\nName=Old\nName[zh_CN]=旧名称\nName[en_US]=Old US\nName[en_GB]=Old UK\nExec=app\n[Desktop Action Other]\nName=Leave this action alone\n';
+const english = replaceDesktopName(desktop, 'New title');
+assert.match(english, /^Name\[en_US\]=New title$/m);
+assert.match(english, /^Name\[en_GB\]=New title$/m);
+assert.match(english, /^Name\[zh_CN\]=旧名称$/m);
+assert.match(english, /^Name=Leave this action alone$/m);
+setLanguage('zh_CN');
+assert.equal(language(), 'zh_CN');
+assert.equal(translate('Hotspot'), '热点');
+assert.equal(translate('Rename'), '重命名');
+const chinese = replaceDesktopName(desktop, '新名称\nExec=bad');
+assert.match(chinese, /^Name\[zh_CN\]=新名称 Exec=bad$/m);
+assert.match(chinese, /^Name\[en_US\]=Old US$/m);
+assert.equal(replaceDesktopName('invalid desktop entry', 'x'), null);
+console.log('Localization and locale-aware desktop-entry rename checks passed.');

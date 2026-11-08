@@ -1,0 +1,4 @@
+# Linux Beautify: user-scoped GTK3 input module registry.
+"@@IME_LIB@@/gtk-3.0/3.0.0/immodules/im-fcitx5.so"
+"fcitx" "Fcitx5 (Flexible Input Method Framework5)" "fcitx5" "/usr/share/locale" "ja:ko:zh:*"
+"fcitx5" "Fcitx5 (Flexible Input Method Framework5)" "fcitx5" "/usr/share/locale" "ja:ko:zh:*"

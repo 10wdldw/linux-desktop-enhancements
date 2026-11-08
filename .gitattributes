@@ -1,0 +1,4 @@
+# Preserve pinned upstream payloads byte-for-byte, including their line endings.
+# Whitespace in dictionaries/translations is upstream data, not project formatting.
+vendor/** -text -whitespace
+src/dock/po/** -text -whitespace

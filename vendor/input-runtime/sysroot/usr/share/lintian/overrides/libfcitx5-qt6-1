@@ -1,0 +1,2 @@
+# Named on purpose for future libraries
+package-name-doesnt-match-sonames libFcitx5Qt6DBusAddons1 libFcitx5Qt6WidgetsAddons2

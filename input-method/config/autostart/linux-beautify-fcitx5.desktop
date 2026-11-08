@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Linux Beautify Chinese Input
+Name[zh_CN]=Linux 美化中文输入法
+Exec="@@IME_LAUNCHER@@" run
+Terminal=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

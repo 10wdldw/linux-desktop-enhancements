@@ -1,0 +1,10 @@
+{
+  "edition": "en",
+  "name": "Linux Beautify · English Edition",
+  "version": "3.1.2",
+  "language": "en",
+  "session_locale": "en_US.UTF-8",
+  "apply_session_language": true,
+  "with_input_method": false,
+  "description": "One extension for Dock, themes and rounded windows; applying the English edition sets the user session to English."
+}

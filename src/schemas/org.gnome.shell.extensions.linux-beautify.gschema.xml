@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.linux-beautify" path="/org/gnome/shell/extensions/linux-beautify/">
+    <key name="language" type="s">
+      <choices><choice value="default"/><choice value="en"/><choice value="zh_CN"/></choices>
+      <default>'default'</default>
+      <summary>Plugin UI language, independent of the session language</summary>
+    </key>
+    <key name="quick-power-countdown" type="b">
+      <default>true</default>
+      <summary>Shorten the end-session countdown to three seconds and default to the power action</summary>
+    </key>
+    <key name="hdr-helper" type="b">
+      <default>false</default>
+      <summary>Expose the optional HDR helper; never activate its paint flag automatically</summary>
+    </key>
+    <key name="input-font" type="s"><default>'Sans 14'</default><summary>Candidate panel font</summary></key>
+    <key name="input-vertical" type="b"><default>false</default><summary>Vertical candidates</summary></key>
+  </schema>
+</schemalist>

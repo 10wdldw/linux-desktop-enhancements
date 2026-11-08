@@ -5453,12 +5453,12 @@ StWidget.focused .app-grid-running-dot {
 }
 
 /* Dock layout and texture transforms are managed by magnifier.js.
-   Shorten the plate from the bottom by 0.6 running-dot diameters (5px * 0.6).
-   margin-top stays 0 so the top edge does not move. */
+   Margin stays 0. A non-zero margin-bottom fights the plate translation
+   and the lower edge changes height on style refresh. */
 #dashtodockContainer.bottom #dash .dash-background,
 #dashtodockContainer.bottom.shrink #dash .dash-background {
   margin-top: 0 !important;
-  margin-bottom: 3px !important;
+  margin-bottom: 0 !important;
 }
 #dashtodockContainer.bottom #dash #dashtodockBoxContainer {
   padding: 0;
@@ -5540,42 +5540,9 @@ StWidget.focused .app-grid-running-dot {
   icon-size: 72px !important;
   width: 72px !important;
   height: 72px !important;
-  border-radius: 18px !important;
+  border-radius: 15px !important;
   overflow: hidden !important;
 }
-
-/* Notification badge styling. Texture supersampling is owned by magnifier.js. */
-#dashtodockContainer .notification-badge {
-  color: #ffffff !important;
-  background-color: #ff3b30 !important;
-  border: 1px solid rgba(255, 255, 255, 0.20) !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18) !important;
-  border-radius: 9999px !important;
-  margin: 0 !important;
-  padding: 0.07em 0.18em !important;
-  min-width: 1.00em !important;
-  font-family: Roboto !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.10px !important;
-  font-feature-settings: "pnum" 1;
-  text-align: center !important;
-}
-
-#dashtodockContainer .notification-badge.macstyle-single-digit-badge {
-  min-width: 1.10em !important;
-  height: 1.10em !important;
-  padding: 0 !important;
-  border-radius: 9999px !important;
-}
-
-#dashtodockContainer .notification-badge.macstyle-capsule-badge {
-  min-width: 0 !important;
-  min-height: 1.10em !important;
-  height: 1.10em !important;
-  padding: 0 0.14em !important;
-  border-radius: 9999px !important;
-}
-
 
 
 
